@@ -1,0 +1,207 @@
+/* styles.css */
+@import url( 
+"https://fonts.googleapis.com/css2?family=Pacifico&display=swap"); 
+* { 
+	box-sizing: border-box; 
+	margin: 0; 
+	padding: 0; 
+} 
+form { 
+	margin: auto; 
+	max-width: 50%; 
+	margin-bottom: 20px; 
+} 
+h1 { 
+	color: #00a136; 
+	font-size: 2.5rem; 
+	margin: auto; 
+	text-align: center; 
+	text-shadow: 2px 2px 4px
+		rgba(0, 0, 0, 0.2); 
+	transition: transform 0.3s 
+		ease-in-out; 
+} 
+h1:hover { 
+	transform: scale(1.1); 
+} 
+
+.inputForm input { 
+	width: 80%; 
+	margin: auto; 
+	margin-top: 20px; 
+	display: block; 
+	background-color: #f0e1c6;
+	border: 2px solid #00a136; 
+	border-radius: 7px; 
+	color: #333; 
+	font-weight: bold; 
+	padding: 10px; 
+} 
+.inputForm input::placeholder { 
+	color: #666; 
+	font-weight: bold; 
+} 
+.inputForm input:focus { 
+	outline: none; 
+	border-color: #007bff; 
+	box-shadow: 0 5px 10px
+		rgba(0, 0, 0, 0.2); 
+} 
+.card { 
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  /*background-image: radial-gradient(100% 100% at 100% 0, #83a4d4 0, #b6fbff 100%);
+	max-width: 50%; */
+/*	background-color: rgb( 
+		141, 
+		240, 
+		243*/
+	); 
+	border-radius: 20px; 
+	box-shadow: 0 5px 10px
+		rgba(0, 0, 0, 0.1); 
+	display: flex; 
+	padding: 2rem; 
+	margin: auto; 
+} 
+.avatar { 
+	border-radius: 50%; 
+	border: 4px solid #5468ff; 
+  /*#cd9cf2 00a136*/
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+	height: 150px; 
+	width: 150px; 
+	transition: transform 0.3s 
+		ease-in-out; 
+} 
+.avatar:hover { 
+	transform: scale(1.1); 
+} 
+.user-info { 
+	color: #333; 
+	margin-left: 2rem; 
+	padding: 1rem; 
+	background-color: rgba( 
+		255, 
+		255, 
+		255, 
+		0.9
+	); 
+	border-radius: 10px; 
+	box-shadow: 0 0 10px
+		rgba(0, 0, 0, 0.2); 
+} 
+.user-info h2 { 
+	margin-top: 0; 
+	font-size: 1.5rem; 
+	color: #007bff; 
+} 
+.user-info p { 
+	font-size: 1rem; 
+	margin-top: 0.5rem; 
+} 
+.user-info ul { 
+	list-style-type: none; 
+	display: flex; 
+	justify-content: space-between; 
+	padding: 0; 
+	max-width: 400px; 
+	margin-top: 1rem; 
+} 
+.user-info ul li { 
+	display: flex; 
+	align-items: center; 
+} 
+.user-info ul li strong { 
+	font-size: 0.9rem; 
+	margin-left: 0.5rem; 
+	color: #0072ff; 
+} 
+.repo { 
+	text-decoration: none; 
+	color: #fff; 
+/* repo color --->	background-color: ; */
+  background-image: linear-gradient(135deg, color(display-p3 .572549 .415686 1) 0%, color(display-p3 1 .466667 .690196) 50%, color(display-p3 1 .701961 .403922) 100%);
+	font-size: 0.9rem; 
+	padding: 0.4rem 0.8rem; 
+	margin-right: 0.5rem; 
+	margin-bottom: 0.5rem; 
+	display: inline-block; 
+	border-radius: 9px; 
+	transition: background-color 0.3s, 
+		transform 0.2s; 
+} 
+.repo:hover { 
+	background-color: #cc0c00; 
+	transform: scale(1.05); 
+} 
+@media (max-width: 500px) { 
+	.card { 
+		flex-direction: column; 
+		align-items: center; 
+	} 
+	.inputForm { 
+		max-width: 400px; 
+	} 
+}
+ /* Animated search bar*/
+  input[type=text] {
+  width: 169px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 70%;
+}
+  /* background design*/
+  body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used
+  background-image: url("img_girl.jpg");*/
+   background-image:url("https://i.pinimg.com/originals/0f/30/27/0f302744a56e41527c229016864b39d7.gif");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Heading style CSS */
+.button-49 {
+  padding: 12px 26px;
+  border: 0;
+  font-size: 16px;
+  transition: all 150ms ease-in-out;
+
+  border-radius: 8px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.07) 0 1px 1px, rgba(0, 0, 0, 0.07) 0 2px 2px, rgba(0, 0, 0, 0.07) 0 4px 4px;
+  font-weight: 600;
+
+  color: #fff;
+  box-shadow: rgba(32, 27, 92, 0.8) 0px 0px 0px 1px, rgba(255, 255, 255, 0.7) 0 0 3px 0 inset, 0 1px 2px 0 rgba(0, 0, 0, .5);
+
+  background-image: radial-gradient(53% 87% at 44% 90%, rgba(255, 255, 255, 0.36) 0%, transparent 100%), linear-gradient(80deg, #5044E5 0%, #463CCA 100%);
+}
+
+.button-49:hover {
+  filter: brightness(1.1)
+}
+
+.button-49:active {
+  transform: scale(.95);
+}
